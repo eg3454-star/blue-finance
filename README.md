@@ -47,19 +47,41 @@ This repository is now structured as a small LangChain-based multi-agent scaffol
 - `QueryAgent`: retrieves similar internal projects from the in-memory vector store and summarizes usable analogs.
 - `EstimationOrchestrator`: combines document evidence, comparable projects, external research, and `memory/best_practices.md` to estimate unresolved fields with rationale and confidence.
 
-## Setup
+## Setup (New Machine)
 
-1. Install Python 3.11+.
-2. Install dependencies:
+1. Clone the repository and enter the project folder.
+2. Create and activate a Python virtual environment:
 
-```powershell
-pip install -e .
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-3. Copy `.env.example` values into your shell or env file.
-4. Put project source documents under `data/documents/`.
-5. Put comparable-project notes or files under `data/reference_projects/`.
-6. Start from `data/questionnaire_template.json` for the questionnaire payload shape.
+3. Install pinned Python dependencies and the local package:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Copy `.env.example` values into your shell or env file.
+5. Put project source documents under `data/documents/`.
+6. Put comparable-project notes or files under `data/reference_projects/`.
+7. Start from `data/questionnaire_template.json` for the questionnaire payload shape.
+
+### Frontend Setup
+
+From `ui/`:
+
+```bash
+npm ci
+npm run dev -- --host 127.0.0.1 --port 5173
+```
+
+To refresh pinned backend dependencies after dependency changes:
+
+```bash
+./.venv/bin/pip freeze --exclude-editable > requirements.lock.txt
+```
 
 ### LLM Provider Toggle
 
