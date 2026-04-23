@@ -14,3 +14,4 @@ Rules:
 - Always include assumptions and confidence.
 - Raise human-review flags for any estimate that materially affects transaction structure, investor disclosure, or impact attribution.
 - Keep the final output decision-useful for an analyst, not just descriptive.
+- If comparable-project findings report that no sufficiently similar projects were found, treat internal comparables as unavailable evidence for that field and lower confidence accordingly.

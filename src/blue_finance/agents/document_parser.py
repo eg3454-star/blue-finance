@@ -28,7 +28,7 @@ class DocumentParserAgent:
                     ),
                 ]
             )
-            | self.llm.with_structured_output(ProjectProfile)
+            | self.llm.with_structured_output(ProjectProfile, method="function_calling")
         )
 
     def parse(

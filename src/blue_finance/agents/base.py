@@ -10,14 +10,22 @@ from ..config import Settings
 
 
 def build_chat_model(settings: Settings) -> ChatOpenAI:
+    if not settings.openai_api_key:
+        raise RuntimeError("OPENAI_API_KEY is required to build the chat model.")
     return ChatOpenAI(
         model=settings.openai_model,
         temperature=settings.temperature,
+        api_key=settings.openai_api_key,
     )
 
 
 def build_embeddings(settings: Settings) -> OpenAIEmbeddings:
-    return OpenAIEmbeddings(model=settings.embedding_model)
+    if not settings.openai_api_key:
+        raise RuntimeError("OPENAI_API_KEY is required to build embeddings.")
+    return OpenAIEmbeddings(
+        model=settings.embedding_model,
+        api_key=settings.openai_api_key,
+    )
 
 
 def render_documents(documents: Sequence[Document], max_characters: int = 16000) -> str:

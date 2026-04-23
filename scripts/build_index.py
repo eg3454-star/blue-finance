@@ -21,8 +21,8 @@ def main() -> None:
         documents_dir=settings.documents_dir,
         reference_projects_dir=settings.reference_projects_dir,
     )
-    vector_index.dump(settings.index_dump_path)
-    print(f"Index written to {settings.index_dump_path}")
+    vector_index.dump(settings.faiss_index_dir)
+    print(f"FAISS index written to {settings.faiss_index_dir}")
 
 
 if __name__ == "__main__":

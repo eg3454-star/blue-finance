@@ -1,0 +1,17 @@
+{
+    "project_name": "Example Blue Aquaculture Expansion",
+    "geography": "Indonesia",
+    "sector": "Blue finance",
+    "subsector": "Sustainable aquaculture",
+    "instrument_type": "Blue bond",
+    "project_stage": "Expansion",
+    "use_of_proceeds": "Wastewater treatment and resilience upgrades",
+  
+    "mezzanine_impact_pct": null,
+    "blended_finance_need_pct": null,
+  
+    "estimate_hints": {
+      "mezzanine_impact_pct": { "low": 20, "high": 35 },
+      "blended_finance_need_pct": { "value": 15, "tolerance_ratio": 0.2 }
+    }
+  }

@@ -1,0 +1,546 @@
+estimates": [
+    {
+      "field_name": "total_capital_cost_usd",
+      "estimated_value": "USD 5 million–25 million",
+      "unit": "USD",
+      "estimation_type": "range",
+      "range_low": 5000000.0,
+      "range_high": 25000000.0,
+      "confidence": "low",
+      "reasoning": "No internal comparables were found. External benchmarks indicate capital cost depends heavily on whether this is a modest retrofit/expansion versus a more infrastructure-heavy aquaculture build. Given the stated use of proceeds (wastewater treatment, circular feed systems, coastal resilience upgrades) and concept/pre-feasibility stage, a low-to-mid eight-figure budget is a defensible planning range, but not a project-specific valuation. Range reflects inclusion of treatment, civil works, and contingency rather than core production assets alone.",
+      "assumptions": [
+        "Project is an expansion/retrofit rather than a full greenfield industrial aquaculture complex.",
+        "Costs include wastewater treatment, circular feed systems, coastal resilience works, permitting, and contingency.",
+        "No land acquisition premium or large processing/cold-chain build-out is assumed.",
+        "Currency is nominal USD and excludes major inflation surprises."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Landscape – Climate Policy Initiative",
+        "FAO – Aquaculture development and technical guidance",
+        "Blue Finance Guidance and Blue Bond Principles (market references via IFC/ICMA/ADB/World Bank pages)"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "construction_period_months",
+      "estimated_value": "9–24 months",
+      "unit": "months",
+      "estimation_type": "range",
+      "range_low": 9.0,
+      "range_high": 24.0,
+      "confidence": "medium",
+      "reasoning": "External research supports a split between lighter retrofit/pond upgrades and more complex greenfield or civil-works-heavy packages. Because this project includes wastewater treatment and coastal resilience upgrades, the schedule is more likely governed by permitting and civil works than by husbandry alone. A 9–24 month range is consistent with concept-stage uncertainty and the likelihood of phased implementation.",
+      "assumptions": [
+        "Permitting, land/marine tenure, and design finalization are not yet complete.",
+        "Construction is phased and does not require a multi-site mega-project buildout.",
+        "Commissioning and stabilization are included in the upper end of the range.",
+        "No major delays from community consultation or litigation are assumed."
+      ],
+      "supporting_sources": [
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Sustainable Aquaculture Development in Indonesia",
+        "Indonesia Blue Finance Landscape - Climate Policy Initiative"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "expected_project_life_years",
+      "estimated_value": "10–20 years",
+      "unit": "years",
+      "estimation_type": "range",
+      "range_low": 10.0,
+      "range_high": 20.0,
+      "confidence": "medium",
+      "reasoning": "External sources support a long-lived asset view for aquaculture infrastructure, especially when wastewater treatment and coastal resilience works are part of the financed package. A 10–20 year economic life aligns with civil works and fixed infrastructure; shorter lives would only be appropriate if the project were mostly modular equipment. Given the use-of-proceeds mix, this range is a defensible planning assumption.",
+      "assumptions": [
+        "Economic life is anchored to the longest-lived financed assets, not biological production cycles.",
+        "Civil works, treatment systems, and resilience upgrades are material components.",
+        "Asset replacement cycles for feed automation or equipment may be shorter, but do not determine whole-project life."
+      ],
+      "supporting_sources": [
+        "ICMA – Bonds to Finance the Sustainable Blue Economy: A Practitioner's Guide (September 2023)",
+        "World Bank – A Trillion Dollar Investment Opportunity in Sustainable Aquaculture",
+        "QEMS Journal – Blue Economy Financing: Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "brief_project_description",
+      "estimated_value": "Expansion/modernization of an Indonesian sustainable aquaculture platform using blue-bond proceeds for wastewater treatment, circular feed systems, and coastal resilience upgrades to improve environmental performance, operational efficiency, and climate resilience.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "The draft already states the use of proceeds and project type; external references support a generic description centered on production expansion plus environmental upgrades. Specific species, site count, and sponsor details are unavailable, so the description remains broad.",
+      "assumptions": [
+        "Project remains a concept-stage sustainable aquaculture expansion.",
+        "No claim is made about species, exact capacity, or ownership structure.",
+        "Environmental improvements are described as use of proceeds, not as the sole revenue driver."
+      ],
+      "supporting_sources": [
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Sustainable Aquaculture in Indonesia: Growth & Practices",
+        "Sustainable Aquaculture Development in Indonesia"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "primary_revenue_stream",
+      "estimated_value": "Sale of aquaculture output (fish/shrimp/seafood products), with carbon/biodiversity credits as potential ancillary upside if MRV and offtake pathways are secured.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "External research consistently indicates that the default revenue model for sustainable aquaculture is product sales. Carbon and biodiversity monetization is possible but too speculative to be primary absent explicit crediting arrangements and verification.",
+      "assumptions": [
+        "The project remains an operating aquaculture business rather than an environmental-asset-only project.",
+        "Environmental credit revenues are not yet contracted.",
+        "Any secondary revenues remain ancillary to core product sales."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Policy Note - ICCTF",
+        "Investment Guideline for Sustainable Aquaculture in Indonesia",
+        "FAO - The State of World Fisheries and Aquaculture 2024"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "estimated_annual_revenue_steady_state_usd",
+      "estimated_value": "USD 2 million–10 million",
+      "unit": "USD",
+      "estimation_type": "range",
+      "range_low": 2000000.0,
+      "range_high": 10000000.0,
+      "confidence": "low",
+      "reasoning": "There are no comparable internal projects and no project-specific production data. External references support production-based estimation, but the source set does not disclose a comparable Indonesian blue-bond aquaculture project revenue. For a concept-stage expansion, a low-to-mid single-digit to low double-digit million USD revenue band is a cautious placeholder only, assuming a meaningful but not industrial-scale operation.",
+      "assumptions": [
+        "Project is materially smaller than national-scale aquaculture outputs.",
+        "Revenue is driven primarily by harvested product sales.",
+        "Any carbon/biodiversity revenue is not included or is immaterial.",
+        "Species mix and realized prices are broadly consistent with mainstream Indonesia aquaculture economics."
+      ],
+      "supporting_sources": [
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Indonesia Blue Economy Roadmap",
+        "Bonds to Finance the Sustainable Blue Economy - ICMA"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "additional_risk_notes",
+      "estimated_value": "Key additional risks likely include: (1) aquaculture biosecurity/disease outbreaks and feed-price volatility; (2) permitting, wastewater discharge approvals, and coastal/land tenure uncertainty; (3) climate and physical exposure for coastal assets despite the draft’s low rating; (4) MRV eligibility and verification risk if carbon/biodiversity revenues are monetized; (5) limited local blue-bond comparables and potential disclosure/MRV burden; and (6) dependence on DFI/blended-finance support if the capital stack needs de-risking.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "External research strongly supports these as the main residual risks for Indonesia sustainable aquaculture blue finance. The draft’s low ratings appear self-reported and are not fully supported by evidence, so additional notes should explicitly flag them for review.",
+      "assumptions": [
+        "Physical climate risk is understated in the draft because the project is coastal.",
+        "Revenue diversification into carbon/biodiversity credits is optional and uncertain.",
+        "The project remains early-stage with incomplete permits and tenure clarity."
+      ],
+      "supporting_sources": [
+        "ICMA Green Bond Principles / Social Bond Principles / Sustainability Bond Guidelines",
+        "World Bank – Accelerating Blue Finance: Instruments, Case Studies, and Market Development",
+        "FAO – Aquaculture development and biosecurity guidance (aquaculture health, biosecurity, and sustainability resources)",
+        "Indonesia Blue Finance Landscape - Climate Policy Initiative"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "equity_contribution_from_sponsor_pct",
+      "estimated_value": "15%–30%",
+      "unit": "%",
+      "estimation_type": "range",
+      "range_low": 15.0,
+      "range_high": 30.0,
+      "confidence": "medium",
+      "reasoning": "External evidence suggests early-stage aquaculture projects usually need meaningful sponsor equity. For concept/pre-feasibility in Indonesia, a mid-teens to low-30s range is defensible, with the lower end more plausible if concessional support is present. No market-standard sponsor equity % was found.",
+      "assumptions": [
+        "Sponsor has adequate balance-sheet capacity.",
+        "No large strategic off-taker equity is assumed.",
+        "Range is before any final senior debt sizing optimization."
+      ],
+      "supporting_sources": [
+        "Indonesia's inaugural sovereign blue bond / SDG Government Securities Framework announcement",
+        "UNDP Indonesia Thematic Bond Market Investor Survey 2024",
+        "FAO The State of World Fisheries and Aquaculture 2024"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "concessional_catalytic_tranche_pct",
+      "estimated_value": "10%–20%",
+      "unit": "%",
+      "estimation_type": "range",
+      "range_low": 10.0,
+      "range_high": 20.0,
+      "confidence": "low",
+      "reasoning": "Blue bond and blended finance references indicate concessional capital is typically a minority share sized to de-risk the transaction rather than dominate it. Given concept-stage risk, a 10%–20% catalytic layer is a plausible placeholder, but there is no Indonesia aquaculture-specific benchmark and the exact size should be driven by the bankability gap.",
+      "assumptions": [
+        "A blended finance structure is actually used.",
+        "Concessional capital is first-loss/junior or similarly catalytic.",
+        "Senior debt is otherwise not fully bankable without de-risking."
+      ],
+      "supporting_sources": [
+        "The Commonwealth Guide to Blue Bond Issuance",
+        "Blue bonds and innovative debt instruments for a sustainable ocean economy",
+        "Investment Guideline for Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "mezzanine_impact_pct",
+      "estimated_value": "20%–40%",
+      "unit": "%",
+      "estimation_type": "range",
+      "range_low": 20.0,
+      "range_high": 40.0,
+      "confidence": "low",
+      "reasoning": "Using the repository’s working definition, mezzanine impact should measure the share of total measurable blue impact attributable to the catalytic role of mezzanine capital. For a concept-stage, high-uncertainty project, mezzanine could be meaningful in enabling the transaction, but this is highly judgmental and depends on how much of the project would not proceed without it. No internal comparables exist, so confidence is low.",
+      "assumptions": [
+        "Mezzanine is genuinely catalytic and not merely incremental.",
+        "Mezzanine is assessed against total project impact, not tranche size.",
+        "Project impact is measurable through the stated MRV framework."
+      ],
+      "supporting_sources": [
+        "Indonesia Launches the World’s First Publicly Offered Sovereign Blue Bond | United Nations DCO",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Indonesian aquaculture futures – Evaluating environmental and ..."
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "identified_dfi_concessional_source",
+      "estimated_value": "Not yet identified; plausible candidates include UNDP, World Bank/IBRD, IFC, ADB, or climate/adaptation facilities if coastal resilience is co-financed.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "low",
+      "reasoning": "Public sources do not identify a project-specific concessional source. The most defensible estimate is that the source is still to be determined, with multilateral/DFI candidates based on Indonesia blue finance precedents and coastal resilience relevance.",
+      "assumptions": [
+        "No mandate letter or term sheet exists.",
+        "Any DFI role is likely catalytic/technical-assistance first rather than direct cheap debt.",
+        "Coastal resilience and wastewater treatment remain core co-benefits for a DFI case."
+      ],
+      "supporting_sources": [
+        "Indonesia Launches the World’s First Publicly Offered Sovereign Blue Bond (UN SDG / UNDP story)",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Blue Bond Financing Model for Environmental Social ..."
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "dfi_engagement_status",
+      "estimated_value": "Not yet confirmed / exploratory",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "The project is concept/pre-feasibility, and no source confirms current DFI involvement. External evidence suggests DFI dialogue is plausible and often needed in this market, but absent a mandate or pipeline note the status should be treated as exploratory only.",
+      "assumptions": [
+        "No named DFI, TA grant, or anchor-investor commitment has been disclosed.",
+        "Project remains early stage with unresolved permitting and tenure issues.",
+        "Any DFI role would likely begin as project preparation, verification, or catalytic support."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Landscape - Climate Policy Initiative",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "BLUE BOND FINANCING MODEL FOR ENVIRONMENTAL SOCIAL ..."
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "credit_enhancement_structure",
+      "estimated_value": "Likely mix of sponsor equity first loss, a concessional first-loss/junior tranche, a DSRA or reserve account, ring-fenced project cash flows, and possibly a partial credit or political-risk guarantee if DFI-backed.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "This is the most market-consistent structure for a concept-stage blue bond in a riskier Indonesian aquaculture setting. External references support blended finance tools, external review, and ring-fencing, but no source dictates the exact package.",
+      "assumptions": [
+        "The project requires credit enhancement to reach bankability.",
+        "A DFI or similar institution participates, at least as advisor/guarantor.",
+        "Offtake and permitting are not yet sufficiently de-risked for plain senior debt alone."
+      ],
+      "supporting_sources": [
+        "Bonds to Finance the Sustainable Blue Economy: A Practitioner's Guide",
+        "Blue Finance Instruments Development Guideline - ICCTF / Bappenas",
+        "World Bank – Accelerating Blue Finance: Instruments, Case Studies, and Market Development"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "preferred_capital_structure_notes",
+      "estimated_value": "Senior blue bond/use-of-proceeds layer should likely sit behind sponsor equity and any catalytic tranche, with phased construction disbursements, clear use-of-proceeds ring-fencing, external verification, and senior debt sized only after permits, tenure, and MRV are secured.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "External references support a conservative, phased structure for concept-stage aquaculture. The blue bond should be structured as a senior instrument where possible, but not before the project has enough bankability and reporting infrastructure.",
+      "assumptions": [
+        "Project is financed in phases.",
+        "Bond proceeds are earmarked to eligible blue expenditures.",
+        "Permits, tenure, and verification are conditions precedent to scale-up."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Policy Note - ICCTF",
+        "Bonds to Finance the Sustainable Blue Economy: A Practitioner's Guide (ICMA, 2023)",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "third_party_verifier",
+      "estimated_value": "Independent external reviewer / second-party opinion provider to be named; likely an ESG verifier such as Sustainalytics, V.E, ISS-Corporate, CICERO Shades of Green, or equivalent",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "Market practice strongly favors an independent external review/second-party opinion for blue bonds. The draft’s blank verifier field is a disclosure gap, so the best estimate is a placeholder naming a category rather than a firm.",
+      "assumptions": [
+        "No verifier has been appointed yet.",
+        "The verifier will need competence in blue finance, MRV, and aquaculture/water-related impacts.",
+        "Issuer will follow market-standard external review practice."
+      ],
+      "supporting_sources": [
+        "ICMA - Green Bond Principles, Social Bond Principles and Sustainability Bond Guidelines",
+        "The Commonwealth Guide to Blue Bond Issuance",
+        "IFC - Blue Finance / Ocean Financing references"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "sdg_alignment",
+      "estimated_value": "Primary: SDG 14; Secondary: SDG 2, SDG 6, SDG 12, SDG 13, and possibly SDG 8",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "External references strongly support this mapping for sustainable aquaculture with wastewater and resilience upgrades. SDG 14 is the main blue-economy anchor, while food security, water, production efficiency, climate, and livelihoods provide secondary alignment.",
+      "assumptions": [
+        "Project design actually improves water quality, ecosystem outcomes, and production efficiency.",
+        "KPIs and exclusions are sufficiently specific to avoid over-claiming.",
+        "Livelihood/job effects are positive or neutral."
+      ],
+      "supporting_sources": [
+        "Indonesia Launches the World's First Publicly Offered Sovereign Blue Bond (UNDP support)",
+        "Republic of Indonesia SDGs Government Securities Framework / Second Opinion (PDF)",
+        "ICMA Blue Finance Guide"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "blended_finance_need_pct",
+      "estimated_value": "30%–60%",
+      "unit": "%",
+      "estimation_type": "range",
+      "range_low": 30.0,
+      "range_high": 60.0,
+      "confidence": "medium",
+      "reasoning": "Concept-stage, low-tenure, low-permitting, low-technology-maturity projects in this market likely need substantial catalytic support. The evidence base does not support precision, but a 30%–60% blended-finance need is consistent with the need to de-risk construction, MRV, and offtake before senior capital can be crowded in.",
+      "assumptions": [
+        "The project is materially underbanked without concessional support.",
+        "The blended component may include grants, first-loss capital, or concessional debt.",
+        "The project is not yet fully de-risked by contracts or permits."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Policy Note",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "BLUE BOND FINANCING MODEL FOR ENVIRONMENTAL SOCIAL ..."
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "expected_impact_reporting_frequency",
+      "estimated_value": "Annual public reporting, with internal quarterly monitoring where possible",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "This matches market practice under ICMA-aligned blue/thematic bonds and the need for transparent impact tracking. For a concept-stage project, quarterly internal monitoring is prudent, but annual public reporting is the defensible external cadence.",
+      "assumptions": [
+        "The bond follows use-of-proceeds style reporting norms.",
+        "The issuer can support periodic internal data collection.",
+        "Verification is aligned to annual reporting or milestone-based assurance."
+      ],
+      "supporting_sources": [
+        "ICMA Green Bond Principles / Sustainability Bond Guidelines",
+        "ICMA Blue Finance / Blue Bonds resources",
+        "World Bank – Innovative Blue Financing for Integrated Seascape Management in Indonesia"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "project_company_name",
+      "estimated_value": "Unknown / not disclosed in the draft",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "No project company name is present in the questionnaire draft and no comparable internal project exists. Any named company would be unsupported, so the safest answer is unknown until sponsor disclosure.",
+      "assumptions": [
+        "No sponsor/SPV has been formally identified.",
+        "No public project documentation was provided beyond the draft."
+      ],
+      "supporting_sources": [
+        "Guidelines for Blue Finance: Guidance for financing the Blue Economy",
+        "Indonesia’s First Sustainability Bond by a Non-Bank Financial Institution"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "sponsor_entity",
+      "estimated_value": "Unknown / likely Indonesian aquaculture operator or SPV if domestic, but not identifiable from current materials",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "The project is concept-stage with no sponsor disclosed. Market references suggest the sponsor is more likely to be an operator or SPV than a sovereign issuer, but this cannot be confirmed from the available materials.",
+      "assumptions": [
+        "Project is not sovereign-backed.",
+        "Sponsor has not yet been publicly named.",
+        "Any operating company would likely be Indonesian-incorporated or locally operating."
+      ],
+      "supporting_sources": [
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "Investment Guideline for Sustainable Aquaculture in Indonesia (IDH)",
+        "Strengthening Indonesia's role in the ASEAN blue economy through ..."
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "jurisdiction_of_incorporation",
+      "estimated_value": "Indonesia (likely PT or PT PMA structure if project-level SPV/issuer is domestic)",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "medium",
+      "reasoning": "External references suggest domestic assets and permits usually imply Indonesian incorporation. This remains an inference because no legal entity is disclosed.",
+      "assumptions": [
+        "Assets, permits, and operations are in Indonesia.",
+        "No offshore holdco/issuer structure is indicated.",
+        "The project company follows standard local SPV practice."
+      ],
+      "supporting_sources": [
+        "Indonesia Blue Finance Landscape - Climate Policy Initiative",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia",
+        "ICMA - Green, Social, Sustainability and Sustainability-Linked Bond Principles"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "reporting_cadence",
+      "estimated_value": "Annual public bond reporting; quarterly or semiannual internal project monitoring if feasible",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "Annual reporting is the market norm for blue/thematic bonds. More frequent internal monitoring is advisable for operating metrics, especially in aquaculture and during construction.",
+      "assumptions": [
+        "Bond is structured under ICMA-style use-of-proceeds norms.",
+        "Operational KPIs are available at least quarterly.",
+        "No DFI covenant requires a stricter public cadence."
+      ],
+      "supporting_sources": [
+        "ICMA Green Bond Principles / Sustainability Bond Guidelines",
+        "ICMA Blue Finance / Blue Bonds resources",
+        "ASEAN Capital Markets Forum Sustainable and Responsible Investment (SRI) Standards"
+      ],
+      "requires_human_review": false
+    },
+    {
+      "field_name": "target_financial_close",
+      "estimated_value": "12–24 months from concept stage, assuming sponsor and permits progress without major delays",
+      "unit": "months",
+      "estimation_type": "range",
+      "range_low": 12.0,
+      "range_high": 24.0,
+      "confidence": "low",
+      "reasoning": "Blue bond close timing is typically driven by framework development, external review, permitting, and investor/DFI readiness. With concept-stage uncertainty and missing sponsor/permit details, a 12–24 month planning window is reasonable but highly contingent.",
+      "assumptions": [
+        "Feasibility, permit, and tenure work begins promptly.",
+        "No major community, regulatory, or environmental delays arise.",
+        "A credible framework and verifier can be appointed during development."
+      ],
+      "supporting_sources": [
+        "Indonesia Launches the World's First Publicly Offered Sovereign Blue Bond",
+        "Guidelines for Blue Finance Version 2.0 (IFC, PDF)",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "conditions_precedent",
+      "estimated_value": "Board approval of the blue-bond framework; completed E&S due diligence; permits/licences for aquaculture, wastewater, and coastal works; clear land/marine tenure; execution of key project documents; appointment of external reviewer/verifier; and satisfaction of any DFI eligibility/reporting conditions if blended finance is used.",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "These are the most standard and defensible CPs for a blue bond financing a concept-stage aquaculture project. They reflect market practice and the specific permitting/tenure issues highlighted by the external research.",
+      "assumptions": [
+        "Bond is issued on a use-of-proceeds basis.",
+        "Project is in Indonesia and requires local environmental approvals.",
+        "Any DFI support comes with standard eligibility and reporting conditions."
+      ],
+      "supporting_sources": [
+        "Bonds to Finance the Sustainable Blue Economy: A Practitioner's Guide (ICMA, 2023)",
+        "Blue Bonds in Sustainable Finance: Frameworks, Market ...",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": true
+    },
+    {
+      "field_name": "key team members",
+      "estimated_value": "Sponsor/project director; aquaculture operations lead; engineering/infrastructure lead; E&S/permitting lead; finance/treasury lead; MRV/impact lead; legal/regulatory counsel; and an independent verifier/adviser",
+      "unit": null,
+      "estimation_type": "direct",
+      "range_low": null,
+      "range_high": null,
+      "confidence": "high",
+      "reasoning": "Market guidance and Indonesia blue bond precedent support a compact core team plus specialist advisers. Role-based staffing is more defensible than a person count at this stage.",
+      "assumptions": [
+        "Sponsor will outsource some specialist functions.",
+        "The project remains concept/pre-feasibility.",
+        "Verification and reporting are handled by dedicated external advisers where needed."
+      ],
+      "supporting_sources": [
+        "Bonds to Finance the Sustainable Blue Economy: A Practitioner's Guide (ICMA, Sept 2023)",
+        "Indonesia launches the world’s first publicly offered sovereign blue bond (UNDP Indonesia)",
+        "Blue Economy Financing: Sustainable Aquaculture in Indonesia"
+      ],
+      "requires_human_review": false
+    }
+  ],
+  "next_questions": [
+    "What is the planned production system and species mix (pond, cage, RAS, IMTA, hatchery, or mixed)?",
+    "Is the project an expansion/retrofit of an existing operating asset or a greenfield build?",
+    "What is the estimated installed capacity or annual output volume?",
+    "Has any sponsor/SPV been identified, and is there a legal entity name available?",
+    "Have environmental, discharge, coastal, and tenure permits been initiated or secured?",
+    "Is there an intended DFI, guarantor, or anchor investor already in discussion?",
+    "Will carbon or biodiversity credits be material to the revenue model, and if so, what methodology/verifier is planned?"
+  ],
+  "notes": [
+    "Internal comparables were unavailable for all estimated fields; estimates rely on external benchmarks and heuristics.",
+    "Several fields materially affect transaction structure and disclosure; human review is recommended before external use.",
+    "The draft’s self-reported low ratings for land tenure, permitting, physical climate risk, and execution risk should be revisited because they are not substantiated by supporting documents.",
+    "The draft contains placeholder text and missing verifier/sponsor fields, which lowers confidence in all capital-structure and timeline estimates.",
+    "Estimated ranges are intended for analyst triage and should not be treated as investment committee-grade without project-specific documents."
+  ]
+}
