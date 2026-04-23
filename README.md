@@ -61,6 +61,16 @@ pip install -e .
 5. Put comparable-project notes or files under `data/reference_projects/`.
 6. Start from `data/questionnaire_template.json` for the questionnaire payload shape.
 
+### LLM Provider Toggle
+
+- Set `LLM_PROVIDER` to `openai`, `claude` (or `anthropic`), or `gemini` (or `google`).
+- Optional: set `LLM_MODEL` to override provider-specific defaults.
+- Keep `OPENAI_API_KEY` configured for embeddings and index building (`scripts/build_index.py` still uses OpenAI embeddings).
+- Set provider keys based on your `LLM_PROVIDER`:
+  - OpenAI: `OPENAI_API_KEY`
+  - Claude/Anthropic: `ANTHROPIC_API_KEY`
+  - Gemini: `GOOGLE_API_KEY`
+
 ## Suggested Reference Project Format
 
 The retrieval layer works best when comparable projects are stored as markdown or JSON files with explicit fields such as:

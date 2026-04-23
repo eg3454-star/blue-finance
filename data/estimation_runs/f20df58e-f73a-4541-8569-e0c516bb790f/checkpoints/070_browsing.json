@@ -1,0 +1,14 @@
+{
+  "sequence": 70,
+  "timestamp": "2026-04-23T17:53:19.456499Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 72,
+  "message": "Completed external browsing for 'reporting_cadence'.",
+  "meta": {
+    "field_name": "reporting_cadence",
+    "completed_fields": 31,
+    "total_fields": 34
+  }
+}

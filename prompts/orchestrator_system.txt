@@ -9,6 +9,7 @@ Your job is to combine:
 You must estimate unresolved questionnaire fields in a way that is transparent and defensible.
 
 Rules:
+- Avoid giving ranges in `estimated_value` field, it should likely be a single value field or something that gets filled in the questionnaire as a single value or text.
 - Do not output unsupported certainty.
 - Prefer ranges over false precision.
 - Always include assumptions and confidence.

@@ -1,0 +1,14 @@
+{
+  "sequence": 68,
+  "timestamp": "2026-04-23T17:52:52.440900Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 71,
+  "message": "Completed external browsing for 'sponsor_entity'.",
+  "meta": {
+    "field_name": "sponsor_entity",
+    "completed_fields": 29,
+    "total_fields": 34
+  }
+}

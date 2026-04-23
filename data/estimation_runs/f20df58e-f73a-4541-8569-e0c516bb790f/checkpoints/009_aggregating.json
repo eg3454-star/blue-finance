@@ -1,0 +1,14 @@
+{
+  "sequence": 9,
+  "timestamp": "2026-04-23T17:47:36.940699Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 22,
+  "message": "Aggregated comparables for 'use_of_proceeds'.",
+  "meta": {
+    "field_name": "use_of_proceeds",
+    "completed_fields": 4,
+    "total_fields": 34
+  }
+}

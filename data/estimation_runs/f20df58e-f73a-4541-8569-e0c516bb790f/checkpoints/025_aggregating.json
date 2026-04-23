@@ -1,0 +1,14 @@
+{
+  "sequence": 25,
+  "timestamp": "2026-04-23T17:47:36.946268Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 34,
+  "message": "Aggregated comparables for 'credit_enhancement_structure'.",
+  "meta": {
+    "field_name": "credit_enhancement_structure",
+    "completed_fields": 20,
+    "total_fields": 34
+  }
+}

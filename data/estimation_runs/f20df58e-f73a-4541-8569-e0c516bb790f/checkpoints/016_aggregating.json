@@ -1,0 +1,14 @@
+{
+  "sequence": 16,
+  "timestamp": "2026-04-23T17:47:36.942964Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 28,
+  "message": "Aggregated comparables for 'political_sovereign_risk'.",
+  "meta": {
+    "field_name": "political_sovereign_risk",
+    "completed_fields": 11,
+    "total_fields": 34
+  }
+}

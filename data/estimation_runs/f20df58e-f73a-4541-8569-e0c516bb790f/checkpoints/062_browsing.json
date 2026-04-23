@@ -1,0 +1,14 @@
+{
+  "sequence": 62,
+  "timestamp": "2026-04-23T17:51:37.349564Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 66,
+  "message": "Completed external browsing for 'third_party_verifier'.",
+  "meta": {
+    "field_name": "third_party_verifier",
+    "completed_fields": 23,
+    "total_fields": 34
+  }
+}

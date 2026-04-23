@@ -1,0 +1,14 @@
+{
+  "sequence": 57,
+  "timestamp": "2026-04-23T17:50:42.483481Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 63,
+  "message": "Completed external browsing for 'identified_dfi_concessional_source'.",
+  "meta": {
+    "field_name": "identified_dfi_concessional_source",
+    "completed_fields": 18,
+    "total_fields": 34
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sequence": 3,
+  "timestamp": "2026-04-23T17:47:33.317693Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "initializing",
+  "progress": 5,
+  "message": "Loading project documents and profile context.",
+  "meta": {}
+}

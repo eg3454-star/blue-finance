@@ -1,0 +1,14 @@
+{
+  "sequence": 28,
+  "timestamp": "2026-04-23T17:47:36.947140Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 36,
+  "message": "Aggregated comparables for 'third_party_verifier'.",
+  "meta": {
+    "field_name": "third_party_verifier",
+    "completed_fields": 23,
+    "total_fields": 34
+  }
+}

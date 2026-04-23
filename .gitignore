@@ -9,6 +9,8 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+ui/node_modules/
+ui/dist/
 
 data/documents/*
 !data/documents/.gitkeep
@@ -16,3 +18,7 @@ data/indexes/*
 !data/indexes/.gitkeep
 data/reference_projects/*
 !data/reference_projects/.gitkeep
+data/generated_questionnaires/*
+!data/generated_questionnaires/.gitkeep
+data/estimation_outputs/*
+!data/estimation_outputs/.gitkeep

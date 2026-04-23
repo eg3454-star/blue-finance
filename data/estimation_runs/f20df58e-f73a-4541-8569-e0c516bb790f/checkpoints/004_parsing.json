@@ -1,0 +1,10 @@
+{
+  "sequence": 4,
+  "timestamp": "2026-04-23T17:47:33.317912Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "parsing",
+  "progress": 12,
+  "message": "Parsing questionnaire and project profile.",
+  "meta": {}
+}

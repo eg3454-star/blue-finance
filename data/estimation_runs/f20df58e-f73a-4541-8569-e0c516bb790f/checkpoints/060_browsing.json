@@ -1,0 +1,14 @@
+{
+  "sequence": 60,
+  "timestamp": "2026-04-23T17:51:13.535998Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 65,
+  "message": "Completed external browsing for 'preferred_capital_structure_notes'.",
+  "meta": {
+    "field_name": "preferred_capital_structure_notes",
+    "completed_fields": 21,
+    "total_fields": 34
+  }
+}

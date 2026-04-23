@@ -1,0 +1,14 @@
+{
+  "sequence": 39,
+  "timestamp": "2026-04-23T17:47:36.950017Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 45,
+  "message": "Aggregated comparables for 'key team members'.",
+  "meta": {
+    "field_name": "key team members",
+    "completed_fields": 34,
+    "total_fields": 34
+  }
+}

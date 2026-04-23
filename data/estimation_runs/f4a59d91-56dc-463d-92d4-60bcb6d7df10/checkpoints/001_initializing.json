@@ -1,0 +1,10 @@
+{
+  "sequence": 1,
+  "timestamp": "2026-04-23T18:33:02.782969Z",
+  "pid": 69319,
+  "job_id": "f4a59d91-56dc-463d-92d4-60bcb6d7df10",
+  "stage": "initializing",
+  "progress": 2,
+  "message": "Loading questionnaire input.",
+  "meta": {}
+}

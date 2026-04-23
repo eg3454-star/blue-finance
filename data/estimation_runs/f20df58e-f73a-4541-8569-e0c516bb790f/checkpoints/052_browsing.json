@@ -1,0 +1,14 @@
+{
+  "sequence": 52,
+  "timestamp": "2026-04-23T17:49:48.058865Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 59,
+  "message": "Completed external browsing for 'mrv_verification_risk'.",
+  "meta": {
+    "field_name": "mrv_verification_risk",
+    "completed_fields": 13,
+    "total_fields": 34
+  }
+}

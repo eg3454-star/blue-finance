@@ -1,0 +1,14 @@
+{
+  "sequence": 10,
+  "timestamp": "2026-04-23T17:47:36.941024Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 23,
+  "message": "Aggregated comparables for 'total_capital_cost_usd'.",
+  "meta": {
+    "field_name": "total_capital_cost_usd",
+    "completed_fields": 5,
+    "total_fields": 34
+  }
+}

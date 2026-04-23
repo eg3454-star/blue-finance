@@ -1,0 +1,14 @@
+{
+  "sequence": 61,
+  "timestamp": "2026-04-23T17:51:24.092651Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 66,
+  "message": "Completed external browsing for 'mrv_status'.",
+  "meta": {
+    "field_name": "mrv_status",
+    "completed_fields": 22,
+    "total_fields": 34
+  }
+}

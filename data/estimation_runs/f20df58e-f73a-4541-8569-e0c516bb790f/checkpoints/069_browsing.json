@@ -1,0 +1,14 @@
+{
+  "sequence": 69,
+  "timestamp": "2026-04-23T17:53:06.535753Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 72,
+  "message": "Completed external browsing for 'jurisdiction_of_incorporation'.",
+  "meta": {
+    "field_name": "jurisdiction_of_incorporation",
+    "completed_fields": 30,
+    "total_fields": 34
+  }
+}

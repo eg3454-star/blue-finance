@@ -1,0 +1,14 @@
+{
+  "sequence": 26,
+  "timestamp": "2026-04-23T17:47:36.946594Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 35,
+  "message": "Aggregated comparables for 'preferred_capital_structure_notes'.",
+  "meta": {
+    "field_name": "preferred_capital_structure_notes",
+    "completed_fields": 21,
+    "total_fields": 34
+  }
+}

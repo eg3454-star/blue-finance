@@ -1,0 +1,14 @@
+{
+  "sequence": 41,
+  "timestamp": "2026-04-23T17:47:56.054974Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 51,
+  "message": "Completed external browsing for 'subsector'.",
+  "meta": {
+    "field_name": "subsector",
+    "completed_fields": 2,
+    "total_fields": 34
+  }
+}

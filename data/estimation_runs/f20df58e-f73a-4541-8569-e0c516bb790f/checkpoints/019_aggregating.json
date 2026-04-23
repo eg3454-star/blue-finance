@@ -1,0 +1,14 @@
+{
+  "sequence": 19,
+  "timestamp": "2026-04-23T17:47:36.944159Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 30,
+  "message": "Aggregated comparables for 'additional_risk_notes'.",
+  "meta": {
+    "field_name": "additional_risk_notes",
+    "completed_fields": 14,
+    "total_fields": 34
+  }
+}

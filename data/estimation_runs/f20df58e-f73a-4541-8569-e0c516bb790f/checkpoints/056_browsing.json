@@ -1,0 +1,14 @@
+{
+  "sequence": 56,
+  "timestamp": "2026-04-23T17:50:30.522474Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 62,
+  "message": "Completed external browsing for 'mezzanine_impact_pct'.",
+  "meta": {
+    "field_name": "mezzanine_impact_pct",
+    "completed_fields": 17,
+    "total_fields": 34
+  }
+}

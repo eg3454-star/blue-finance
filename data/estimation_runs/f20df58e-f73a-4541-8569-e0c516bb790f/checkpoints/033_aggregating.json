@@ -1,0 +1,14 @@
+{
+  "sequence": 33,
+  "timestamp": "2026-04-23T17:47:36.948458Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 40,
+  "message": "Aggregated comparables for 'project_company_name'.",
+  "meta": {
+    "field_name": "project_company_name",
+    "completed_fields": 28,
+    "total_fields": 34
+  }
+}

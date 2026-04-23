@@ -1,0 +1,12 @@
+{
+  "sequence": 3,
+  "timestamp": "2026-04-23T17:46:34.501729Z",
+  "pid": 16689,
+  "job_id": "6e2b7694-a05f-4f68-aa91-c807be50fb48",
+  "stage": "failed",
+  "progress": 100,
+  "message": "Run failed.",
+  "meta": {
+    "error": "ProgressTracker.emit() takes 1 positional argument but 2 were given"
+  }
+}

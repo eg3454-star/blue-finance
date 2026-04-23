@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from dataclasses import asdict
 from collections.abc import Sequence
+from typing import Any, Callable
 
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -77,34 +78,78 @@ class EstimationOrchestrator:
         questionnaire: dict[str, object],
         *,
         target_fields: Sequence[str] | None = None,
+        progress_callback: Callable[[dict[str, Any]], None] | None = None,
     ) -> EstimationOutput:
+        self._emit_progress(
+            progress_callback,
+            stage="initializing",
+            progress=5,
+            message="Loading project documents and profile context.",
+        )
         project_documents = load_corpus(self.settings.documents_dir, corpus_name="documents")
+        self._emit_progress(
+            progress_callback,
+            stage="parsing",
+            progress=12,
+            message="Parsing questionnaire and project profile.",
+        )
         project_profile = self.document_parser.parse(questionnaire, project_documents)
         resolved_target_fields = list(target_fields or self._infer_missing_fields(questionnaire, project_profile))
+        self._emit_progress(
+            progress_callback,
+            stage="aggregating",
+            progress=18,
+            message=f"Identified {len(resolved_target_fields)} target fields to estimate.",
+            meta={"target_fields": resolved_target_fields},
+        )
         estimate_hints = self._parse_estimate_hints(questionnaire)
         profile_filters = self._profile_filters(project_profile)
 
-        comparable_packets = [
-            self.query_agent.find_comparables(
+        comparable_packets: list[ComparableProjectSet] = []
+        total_fields = max(len(resolved_target_fields), 1)
+        for index, field_name in enumerate(resolved_target_fields):
+            comparable_packets.append(
+                self.query_agent.find_comparables(
                 project_profile,
                 field_name,
                 estimate_hint=estimate_hints.get(field_name),
                 metadata_filters=profile_filters,
             )
-            for field_name in resolved_target_fields
-        ]
+            )
+            progress = int(20 + ((index + 1) / total_fields) * 25)
+            self._emit_progress(
+                progress_callback,
+                stage="aggregating",
+                progress=progress,
+                message=f"Aggregated comparables for '{field_name}'.",
+                meta={"field_name": field_name, "completed_fields": index + 1, "total_fields": total_fields},
+            )
 
-        external_packets = [
-            self.browsing_agent.research(
+        external_packets: list[ExternalResearchResult] = []
+        for index, field_name in enumerate(resolved_target_fields):
+            external_packets.append(
+                self.browsing_agent.research(
                 project_profile,
                 self._build_research_question(
                     project_profile,
                     field_name,
                     estimate_hints.get(field_name),
                 ),
+            ))
+            progress = int(50 + ((index + 1) / total_fields) * 25)
+            self._emit_progress(
+                progress_callback,
+                stage="browsing",
+                progress=progress,
+                message=f"Completed external browsing for '{field_name}'.",
+                meta={"field_name": field_name, "completed_fields": index + 1, "total_fields": total_fields},
             )
-            for field_name in resolved_target_fields
-        ]
+        self._emit_progress(
+            progress_callback,
+            stage="synthesizing",
+            progress=80,
+            message="Synthesizing comparable and external evidence.",
+        )
         field_evidence_packets = self._build_field_evidence_packets(
             resolved_target_fields,
             comparable_packets,
@@ -112,7 +157,13 @@ class EstimationOrchestrator:
             estimate_hints,
         )
 
-        return self.chain.invoke(
+        self._emit_progress(
+            progress_callback,
+            stage="thinking",
+            progress=88,
+            message="Final reasoning pass to generate estimates.",
+        )
+        result = self.chain.invoke(
             {
                 "questionnaire": json.dumps(questionnaire, indent=2, default=str),
                 "project_profile": project_profile.model_dump_json(indent=2),
@@ -134,6 +185,39 @@ class EstimationOrchestrator:
                 ),
                 "best_practices": self.best_practices,
             }
+        )
+        self._emit_progress(
+            progress_callback,
+            stage="complete",
+            progress=100,
+            message="Estimation complete.",
+            meta={"estimate_count": len(result.estimates)},
+        )
+        return result
+
+    @staticmethod
+    def _emit_progress(
+        callback: Callable[[dict[str, Any]], None] | None,
+        *,
+        stage: str,
+        progress: int,
+        message: str,
+        meta: dict[str, Any] | None = None,
+    ) -> None:
+        if callback is None:
+            return
+        payload: dict[str, Any] = {
+            "stage": stage,
+            "progress": max(0, min(progress, 100)),
+            "message": message,
+        }
+        if meta:
+            payload["meta"] = meta
+        callback(
+            stage=payload["stage"],
+            progress=payload["progress"],
+            message=payload["message"],
+            meta=payload.get("meta"),
         )
 
     @staticmethod

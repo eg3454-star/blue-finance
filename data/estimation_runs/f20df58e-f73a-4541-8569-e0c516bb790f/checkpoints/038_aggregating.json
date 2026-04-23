@@ -1,0 +1,14 @@
+{
+  "sequence": 38,
+  "timestamp": "2026-04-23T17:47:36.949782Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 44,
+  "message": "Aggregated comparables for 'conditions_precedent'.",
+  "meta": {
+    "field_name": "conditions_precedent",
+    "completed_fields": 33,
+    "total_fields": 34
+  }
+}

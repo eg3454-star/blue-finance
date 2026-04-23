@@ -1,0 +1,12 @@
+{
+  "sequence": 2,
+  "timestamp": "2026-04-23T18:41:14.674355Z",
+  "pid": 79707,
+  "job_id": "b66549cb-9163-463b-9d40-095f07f16e1b",
+  "stage": "failed",
+  "progress": 100,
+  "message": "Run failed.",
+  "meta": {
+    "error": "langchain-google-genai is required for LLM_PROVIDER=gemini/google. Install with `pip install langchain-google-genai`."
+  }
+}

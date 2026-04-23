@@ -1,0 +1,14 @@
+{
+  "sequence": 46,
+  "timestamp": "2026-04-23T17:48:44.904263Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 55,
+  "message": "Completed external browsing for 'expected_project_life_years'.",
+  "meta": {
+    "field_name": "expected_project_life_years",
+    "completed_fields": 7,
+    "total_fields": 34
+  }
+}

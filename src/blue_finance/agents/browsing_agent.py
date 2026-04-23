@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 from typing import Any
 
+import httpx
+from bs4 import BeautifulSoup
 from langchain_community.tools import TavilySearchResults
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -16,7 +18,8 @@ class BrowsingAgent:
     def __init__(self, settings: Settings | None = None) -> None:
         self.settings = settings or Settings()
         self.llm = build_chat_model(self.settings)
-        self.search_tool: TavilySearchResults | None = None
+        self.search_provider = self.settings.browsing_search_provider.strip().lower()
+        self.search_tool: Any = None
         self.max_query_variants = 2
         self.max_links_total = 5
         self.max_results_per_query = 3
@@ -41,15 +44,7 @@ class BrowsingAgent:
         project_profile: ProjectProfile,
         question: str,
     ) -> ExternalResearchResult:
-        if not self.settings.tavily_api_key:
-            raise RuntimeError("TAVILY_API_KEY is required to use the browsing agent.")
-        if self.search_tool is None:
-            self.search_tool = TavilySearchResults(
-                max_results=self.max_results_per_query,
-                include_answer=True,
-                include_raw_content=False,
-                tavily_api_key=self.settings.tavily_api_key,
-            )
+        self._ensure_search_tool()
         search_payload = self._run_search_queries(
             self._build_query_candidates(project_profile, question)
         )
@@ -60,6 +55,29 @@ class BrowsingAgent:
                 "question": question,
                 "search_results": search_results,
             }
+        )
+
+    def _ensure_search_tool(self) -> None:
+        if self.search_tool is not None:
+            return
+        if self.search_provider == "tavily":
+            if not self.settings.tavily_api_key:
+                raise RuntimeError(
+                    "TAVILY_API_KEY is required when BROWSING_SEARCH_PROVIDER is 'tavily'."
+                )
+            self.search_tool = TavilySearchResults(
+                max_results=self.max_results_per_query,
+                include_answer=True,
+                include_raw_content=False,
+                tavily_api_key=self.settings.tavily_api_key,
+            )
+            return
+        if self.search_provider == "duckduckgo":
+            # Use DuckDuckGo's HTML endpoint directly to avoid optional ddgs dependency.
+            self.search_tool = "duckduckgo_html"
+            return
+        raise RuntimeError(
+            "Unsupported BROWSING_SEARCH_PROVIDER. Use 'tavily' or 'duckduckgo'."
         )
 
     def _build_query_candidates(
@@ -102,7 +120,11 @@ class BrowsingAgent:
         for query in queries:
             if remaining_links <= 0:
                 break
-            raw = self.search_tool.invoke({"query": query})
+            raw = (
+                self._run_duckduckgo_search(query)
+                if self.search_provider == "duckduckgo"
+                else self.search_tool.invoke({"query": query})
+            )
             compact_results = self._normalize_search_output(raw)
             compact_results, used_links = self._limit_payload_links(compact_results, remaining_links)
             remaining_links -= used_links
@@ -114,8 +136,44 @@ class BrowsingAgent:
             )
         return payloads
 
+    def _run_duckduckgo_search(self, query: str) -> list[dict[str, Any]]:
+        try:
+            response = httpx.get(
+                "https://duckduckgo.com/html/",
+                params={"q": query},
+                timeout=10.0,
+                follow_redirects=True,
+                headers={"User-Agent": "Mozilla/5.0"},
+            )
+            response.raise_for_status()
+        except httpx.HTTPError as exc:
+            return [{"title": "DuckDuckGo request failed", "url": None, "content": str(exc)}]
+        soup = BeautifulSoup(response.text, "html.parser")
+        items: list[dict[str, Any]] = []
+        for result in soup.select(".result"):
+            title_el = result.select_one(".result__a")
+            snippet_el = result.select_one(".result__snippet")
+            if title_el is None:
+                continue
+            href = title_el.get("href")
+            if href and href.startswith("//"):
+                href = f"https:{href}"
+            items.append(
+                {
+                    "title": title_el.get_text(" ", strip=True),
+                    "url": href,
+                    "content": snippet_el.get_text(" ", strip=True) if snippet_el else None,
+                }
+            )
+            if len(items) >= self.max_results_per_query:
+                break
+        return items
+
     @staticmethod
     def _normalize_search_output(raw_results: Any) -> Any:
+        if isinstance(raw_results, tuple) and len(raw_results) == 2:
+            _, artifact = raw_results
+            raw_results = artifact
         if isinstance(raw_results, str):
             try:
                 parsed = json.loads(raw_results)
@@ -158,12 +216,14 @@ class BrowsingAgent:
     def _compact_result(item: Any) -> Any:
         if not isinstance(item, dict):
             return item
+        url = item.get("url") or item.get("link")
+        content = item.get("content") or item.get("snippet") or item.get("body")
         return {
             "title": item.get("title"),
-            "url": item.get("url"),
-            "content": BrowsingAgent._truncate_text(item.get("content"), 600),
+            "url": url,
+            "content": BrowsingAgent._truncate_text(content, 600),
             "score": item.get("score"),
-            "published_date": item.get("published_date"),
+            "published_date": item.get("published_date") or item.get("date"),
         }
 
     @staticmethod

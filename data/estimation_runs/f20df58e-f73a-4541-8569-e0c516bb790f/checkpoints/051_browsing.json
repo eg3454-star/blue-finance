@@ -1,0 +1,14 @@
+{
+  "sequence": 51,
+  "timestamp": "2026-04-23T17:49:37.512418Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 58,
+  "message": "Completed external browsing for 'physical_climate_risk'.",
+  "meta": {
+    "field_name": "physical_climate_risk",
+    "completed_fields": 12,
+    "total_fields": 34
+  }
+}

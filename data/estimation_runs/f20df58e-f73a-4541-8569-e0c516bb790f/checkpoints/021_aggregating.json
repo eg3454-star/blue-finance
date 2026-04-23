@@ -1,0 +1,14 @@
+{
+  "sequence": 21,
+  "timestamp": "2026-04-23T17:47:36.944839Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 31,
+  "message": "Aggregated comparables for 'concessional_catalytic_tranche_pct'.",
+  "meta": {
+    "field_name": "concessional_catalytic_tranche_pct",
+    "completed_fields": 16,
+    "total_fields": 34
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sequence": 14,
+  "timestamp": "2026-04-23T17:47:36.942375Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 26,
+  "message": "Aggregated comparables for 'primary_revenue_stream'.",
+  "meta": {
+    "field_name": "primary_revenue_stream",
+    "completed_fields": 9,
+    "total_fields": 34
+  }
+}

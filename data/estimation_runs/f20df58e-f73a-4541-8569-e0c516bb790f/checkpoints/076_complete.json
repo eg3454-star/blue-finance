@@ -1,0 +1,12 @@
+{
+  "sequence": 76,
+  "timestamp": "2026-04-23T17:54:37.477592Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "complete",
+  "progress": 100,
+  "message": "Estimation complete.",
+  "meta": {
+    "estimate_count": 33
+  }
+}

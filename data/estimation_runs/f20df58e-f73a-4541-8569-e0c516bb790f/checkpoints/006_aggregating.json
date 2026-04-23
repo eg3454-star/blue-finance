@@ -1,0 +1,14 @@
+{
+  "sequence": 6,
+  "timestamp": "2026-04-23T17:47:36.939577Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 20,
+  "message": "Aggregated comparables for 'sector'.",
+  "meta": {
+    "field_name": "sector",
+    "completed_fields": 1,
+    "total_fields": 34
+  }
+}

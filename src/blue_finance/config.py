@@ -50,11 +50,32 @@ class Settings(BaseModel):
     index_dump_path: Path = ROOT_DIR / "data" / "indexes" / "project_index.json"
     faiss_index_dir: Path = ROOT_DIR / "data" / "indexes" / "project_index_faiss"
 
+    llm_provider: str = Field(
+        default_factory=lambda: (_env("LLM_PROVIDER", "openai") or "openai")
+    )
+    llm_model: str | None = Field(
+        default_factory=lambda: _env("LLM_MODEL")
+    )
+
     openai_model: str = Field(
         default_factory=lambda: _env("OPENAI_MODEL", "gpt-4.1-mini") or "gpt-4.1-mini"
     )
     openai_api_key: str | None = Field(
         default_factory=lambda: _env("OPENAI_API_KEY")
+    )
+    anthropic_model: str = Field(
+        default_factory=lambda: _env("ANTHROPIC_MODEL", "claude-3-5-sonnet-latest")
+        or "claude-3-5-sonnet-latest"
+    )
+    anthropic_api_key: str | None = Field(
+        default_factory=lambda: _env("ANTHROPIC_API_KEY")
+    )
+    gemini_model: str = Field(
+        default_factory=lambda: _env("GEMINI_MODEL", "gemini-2.0-flash")
+        or "gemini-2.0-flash"
+    )
+    google_api_key: str | None = Field(
+        default_factory=lambda: _env("GOOGLE_API_KEY") or _env("GEMINI_API_KEY")
     )
     embedding_model: str = Field(
         default_factory=lambda: _env("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large")
@@ -65,6 +86,9 @@ class Settings(BaseModel):
     )
     tavily_api_key: str | None = Field(
         default_factory=lambda: _env("TAVILY_API_KEY")
+    )
+    browsing_search_provider: str = Field(
+        default_factory=lambda: (_env("BROWSING_SEARCH_PROVIDER", "tavily") or "tavily")
     )
     comparable_max_distance: float = Field(
         default_factory=lambda: float(_env("COMPARABLE_MAX_DISTANCE", "1.2") or "1.2")

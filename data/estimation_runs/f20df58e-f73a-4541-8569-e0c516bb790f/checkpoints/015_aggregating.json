@@ -1,0 +1,14 @@
+{
+  "sequence": 15,
+  "timestamp": "2026-04-23T17:47:36.942669Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "aggregating",
+  "progress": 27,
+  "message": "Aggregated comparables for 'estimated_annual_revenue_steady_state_usd'.",
+  "meta": {
+    "field_name": "estimated_annual_revenue_steady_state_usd",
+    "completed_fields": 10,
+    "total_fields": 34
+  }
+}

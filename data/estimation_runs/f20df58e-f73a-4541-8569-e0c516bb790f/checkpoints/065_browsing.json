@@ -1,0 +1,14 @@
+{
+  "sequence": 65,
+  "timestamp": "2026-04-23T17:52:11.441933Z",
+  "pid": 17840,
+  "job_id": "f20df58e-f73a-4541-8569-e0c516bb790f",
+  "stage": "browsing",
+  "progress": 69,
+  "message": "Completed external browsing for 'blended_finance_need_pct'.",
+  "meta": {
+    "field_name": "blended_finance_need_pct",
+    "completed_fields": 26,
+    "total_fields": 34
+  }
+}
